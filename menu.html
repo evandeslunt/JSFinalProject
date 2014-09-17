@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="menustyle.css" />
+<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/menu_script.js"></script>
+<title>Volcano Sushi Menu</title>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<h1>Volcano Sushi</h1>
+<p class="small">264 W. Main Street<br />
+Waukesha, WI 53188<br />
+Hours: 11:00 AM - 11:00 PM Daily</p>
+</header>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="order.html">Order</a></li>
+		<li><a href="events.html">Specials</a></li>
+	</ul>
+</nav>
+
+
+<div id="searchArea">
+<p>Click the menu items below to learn more about our house specialties.</p>
+
+<p id="btnHide" class="linkBtn">Show/Hide Search Form</p>
+<p>Search our menu! Select the ingredients you'd like to see.</p>
+<form id="frmsearch" method="post" action="">
+<div class="formGroup">
+<p>Fish/Seafood</p>
+<input type="checkbox" name="crab" value="crab">Crab</br>
+<input type="checkbox" name="eel" value="eel">Eel</br>
+<input type="checkbox" name="salmon" value="salmon">Salmon</br>
+<input type="checkbox" name="smokedsalmon" value="smokedsalmon">Smoked Salmon</br>
+<input type="checkbox" name="shrimp" value="shrimp">Shrimp</br>
+<input type="checkbox" name="tuna" value="tuna">Tuna</br>
+<input type="checkbox" name="yellowtail" value="yellowtail">Yellowtail</br>
+</div><!--group1-->
+<div class="formGroup">
+<p>Vegetables</p>
+<input type="checkbox" name="cucumber" value="cucumber">Cucumber</br>
+<input type="checkbox" name="avocado" value="avocado">Avocado</br>
+<input type="checkbox" name="jalapeno" value="jalapeno">Jalapeno</br>
+<input type="checkbox" name="onion" value="onion">Green Onion</br>
+</div><!--group2-->
+
+<input type="submit" value="Search" id ="btnSearch" class="button"/>
+
+</form>
+<div id="btnClear" class="linkBtn">Clear Search Criteria</div>
+
+</div><!--searchArea-->
+
+<div id="menuitems"><!--Tab Container-->
+<div id="tabNavigation">
+	 <ul class="tabNavigation">
+	   <li><a href="#regular">Classic Rolls</a></li>
+	   <li><a href="#specialty">Specialty Rolls</a></li>
+	   <li><a href="#sashimi">Sashimi & Nigiri</a></li>
+	 </ul>
+</div><!--tab navigation-->
+
+
+<div class="tab" id="regular"><!--regular and sashimi-->
+	<div class="head">
+	<h3 class="active salmon cucumber avocado">Alaska Roll</h3>
+	<div class="details hidden">
+	<img src="images/alaska_roll.jpg" alt="Alaska Roll" />
+	<p>Salmon, cucumber, and avocado</p>
+	<p>$5.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="avocado">Avocado Roll</h3>
+	<div class="details hidden">
+	<img src="images/avocado_roll.jpg" alt="Avocado Roll" />
+	<p>Avocado rolled in seaweed and rice</p>
+	<p>$5.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="shrimp cucumber lettuce mayo">Boston Roll</h3>
+	<div class="details hidden">
+	<img src="images/boston_roll.jpg" alt="Boston Roll" />
+	<p>Shrimp, Cucumber, Lettuce, Mayo</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="crab cucumber avocado">California Roll</h3>
+	<div class="details hidden">
+	<img src="images/california_roll.jpg" alt="California Roll" />
+	<p>Crab meat, cucumber, and avocado</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="crab cucumber avocado eel">Dragon Roll</h3>
+	<div class="details hidden">
+	<img src="images/dragon_roll.jpg" alt="Dragon Roll" />
+	<p>Crab meat, eel, avocado, cucumber, topped with Avocado and Eel sauce</p>
+	<p>$6.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="eel avocado">Eel Avocado Roll</h3>
+	<div class="details hidden">
+	<img src="images/eel_avocado_roll.jpg" alt="Eel Avocado Roll" />
+	<p>Eel and avocado in red rice paper and rice</p>
+	<p>$5.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="Creamcheese smokedsalmon cucumber">Philadelphia Roll</h3>
+	<div class="details hidden">
+	<img src="images/philadelphia_roll.jpg" alt="Philidelphia Roll" />
+	<p>Smoked Salmon, cream cheese, and cucumber</p>
+	<p>$6.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="crab cucumber avocado salmon tuna shrimp yellowtail">Rainbow Roll</h3>
+	<div class="details hidden">
+	<img src="images/rainbow_roll.jpg" alt="Rainbow Roll" />
+	<p>Crab meat, avocado, and cucumber topped with tuna, salmon, shrimp, and yellowtail tuna</p>
+	<p>$7.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="salmon">Salmon Roll</h3>
+	<div class="details hidden">
+	<img src="images/salmon_roll.jpg" alt="Salmon Roll" />
+	<p>Salmon wrapped in rice and seaweed</p>
+	<p>$5.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="crab cucumber masago lettuce eel">Spider Roll</h3>
+	<div class="details hidden">
+	<img src="images/spider_roll.jpg" alt="Spider Roll" />
+	<p>Soft Shell Crab, masago, lettuce, cucumber, and eel sauce</p>
+	<p>$7.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="tuna avocado tempura eel spicymayo">Super Tempura Roll</h3>
+	<div class="details hidden">
+	<img src="images/super_tempura_roll.jpg" alt="Super Tempura Roll" />
+	<p>Spice tuna and avocado deep fried in tempura batter topped with spicy mayo and eel sauce</p>
+	<p>$6.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="shrimp crab avocado tempura eel spicymayo">Tempura Roll</h3>
+	<div class="details hidden">
+	<img src="images/tempura_roll.jpg" alt="Tempura Roll" />
+	<p>Your choice shrimp or crab and avocado deep fried in tempura batter topped with spicy 
+	mayo and eel sauce</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="tuna">Tuna Roll</h3>
+	<div class="details hidden">
+	<img src="images/tuna_roll.jpg" alt="Tuna Roll" />
+	<p>Tuna with rice wrapped in seaweed</p>
+	<p>$5.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="veg cucumber avocado asparagus">Vegetable Roll</h3>
+	<div class="details hidden">
+	<img src="images/vegetable_roll.jpg" alt="Vegetable Roll" />
+	<p>Cucumber, avocado, and asparagus</p>
+	<p>$5.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="yellowtail">Yellowtail Roll</h3>
+	<div class="details hidden">
+	<img src="images/yellowtail_roll.jpg" alt="Yellowtail Roll" />
+	<p>Yellowtail tuna with rice wrapped in seaweed</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	</div><!--regular rolls tab-->
+	<div class="tab" id="specialty">
+	<!---------------------------------------------------------------------------------------->
+	
+<div class="head">
+	<h3 class="salmon tuna creamcheese spicymayo roe">Waukesha Roll</h3>
+	<div class="details hidden">
+	<img src="images/waukesha_roll.jpg" alt="Waukesha Roll" />
+	<p>A specialty roll named after our hometown! Salmon, tuna, and spicy mayo
+	topped with salmon and roe.</p>
+	<p>$14.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="salmon cilantro avocado cucumber onion">Milwaukee Roll</h3>
+	<div class="details hidden">
+	<img src="images/milwaukee_roll.jpg" alt="Milwaukee Roll" />
+	<p>A classy specialty roll, and a chef favorite. Salmon, cilantro, and cucumber, 
+	topped with salmon and green onion.</p>
+	<p>$15.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="salmon tempura avocado roe">Rock n Roe</h3>
+	<div class="details hidden">
+	<img src="images/rock_n_roe_roll.jpg" alt="Rock n Roe Roll" />
+	<p>Salmon, tempura crisp, and avocado inside, topped with spicy mayo, sesame seeds, and salmon roe.</p>
+	<p>$17.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="tuna shrimp jalapeno cucumber">Tuna Loca</h3>
+	<div class="details hidden">
+	<img src="images/tuna_loca_roll.jpg" alt="Tuna Loca Roll" />
+	<p>Tuna, shrimp, and cucumber come together in this roll, spiced up with spicy sauce
+	and jalapeno.</p>
+	<p>$16.50</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="yellowtail crab jalapeno tempura spicymayo">Fire Breather Roll</h3>
+	<div class="details hidden">
+	<img src="images/fire_breather_roll.jpg" alt="Fire Breather Roll" />
+	<p>This roll is HOT. Jalapenos, crab, yellowtail, and tempura crisp infused with 
+	chili powder and wasabi, all wrapped up in red soypaper and topped with spicy mayo. 
+	Not for the faint of heart.</p>
+	<p>$18.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	
+
+
+</div><!--specialty-->
+
+<div class="tab" id="sashimi">
+	<div class="head">
+	<h3 class="salmon">Salmon Sashimi (Sake)</h3>
+	<div class="details hidden">
+	<img src="images/salmon_sashimi.jpg" alt="Salmon Sashimi" />
+	<p>Six fresh cuts of salmon (sake). Our most popular sashimi.</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="tuna">Tuna Sashimi (Maguro)</h3>
+	<div class="details hidden">
+	<img src="images/tuna_sashimi.jpg" alt="Tuna Sashimi" />
+	<p>Six fresh cuts of tuna (sake).</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="yellowtail">Yellowtail Sashimi (Hamachi)</h3>
+	<div class="details hidden">
+	<img src="images/yellowtail_sashimi.jpg" alt="Yellowtail Sashimi" />
+	<p>Six fresh cuts of yellowtail (sake).</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="salmon">Salmon Nigiri</h3>
+	<div class="details hidden">
+	<img src="images/salmon_nigiri.jpg" alt="Salmon Nigiri" />
+	<p>Fresh salmon over rice.</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="tuna">Tuna Nigiri</h3>
+	<div class="details hidden">
+	<img src="images/tuna_nigiri.jpg" alt="Tuna Nigiri" />
+	<p>Fresh tuna over rice.</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	<div class="head">
+	<h3 class="yellowtail">Yellowtail Nigiri</h3>
+	<div class="details hidden">
+	<img src="images/yellowtail_nigiri.jpg" alt="Yellowtail Nigiri" />
+	<p>Fresh yellowtail over rice.</p>
+	<p>$6.00</p>
+	</div><!--details-->
+	</div><!--head-->
+	<!---------------------------------------------------------------------------------------->
+	
+</div><!--sashimi-->
+</div><!--menuitems-->
+
+</div><!--wrapper-->
+
+<footer>
+<p>Copyright Liz Ife Van Deslunt 2014</p>
+</footer>
+</body>
+</html>

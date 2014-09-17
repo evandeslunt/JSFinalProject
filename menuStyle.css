@@ -1,0 +1,67 @@
+/* Styles for Menu page */
+.head {
+	display: block;
+	overflow: auto;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+h3 { 
+	background-color: #3A4040; 
+	height: 25px; 
+	padding-left: 1em;
+	margin-bottom: 0;
+	border-radius: 5px;
+}
+h3:hover { 
+	color: #F5F5DC;
+	background-color: #FF7519;
+}
+.details {
+	overflow: auto;
+	background-color: #E6E6E6;
+	color: #2E2E2E;
+	padding: 1em 1em 1em 1em;
+}
+.details img { float: right; height: 250px; }
+
+
+/* Tab formatting */
+#menuitems{
+	margin: 1em 0 1em 0;
+	padding: 0 1em 1em 1em;
+	border: 1px solid gray;
+}
+.tabNavigation {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tabNavigation ul {	list-style: none; margin-bottom: 0; }
+.tabNavigation li { display: inline-block;  margin-bottom: 0;}
+.tabNavigation a {	
+	color: white;
+	width: 100px;
+	padding: 1em 1em 1em 1em;
+	text-align: center;
+	background-color: #3A4040;
+	border: 1px solid gray; 
+}
+.tabNavigation a:hover {
+	text-decoration: none;
+	border: 2px solid gray;
+}
+.selected {
+	background-color: #F5F5DC;
+}
+
+/* Search Form */
+.formGroup { float: left; }
+#frmsearch input { width: auto; }
+.linkBtn { float: right; text-decoration: underline; color: #FF3300; }
+.linkBtn:hover { text-decoration: none; color: #FF7519; cursor: pointer; }
+#btnClear, #btnSearch { clear: both; }
+
+#searchArea { border: 1px solid gray; padding: 1em 1em 1em 1em; overflow: auto; clear: both;}
+
+/* misc */
+.hidden { display: none; }

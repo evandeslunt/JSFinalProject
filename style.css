@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* General document formatting */
+
+body { 
+	font-family: Trebuchet, Calibri, Geneva, sans-serif; 
+	background-color: #292929; 
+	background-image: url("images/volcano_bkgd.jpg");
+}
+h1 { text-align: center; }
+h2 { color: #FF3300; }
+#wrapper {
+	position: absolute;
+	/*top: 30px;
+	left: 310px;*/
+	top: 5em;
+	left: 25em;
+	padding: 1em 1em 1em 1em;
+	overflow: auto;
+	width: 800px;  
+	background-color: #F2F2F2;
+	background-color: #2E2E2E;
+	color: #292929;
+	color: #F2F2F2;
+	border-left: 1px solid #FF3300;
+}
+#description, #orderArea, #orderConfirm { 
+	background-color: #3A4040;
+	color: #E6E6E6; 
+	padding: 1em 1em 1em 1em;
+	margin-left: 3em;
+	margin-right: 3em;
+	overflow: auto;
+}
+#orderConfirm { 
+	background-color: #E6E6E6; 
+	color: #3A4040; 
+	width: 80%;
+		
+}
+#description img { float: right; }
+#description { float: left;  }
+#orderArea { width: 80%; }
+
+nav { 
+	font-weight: bold;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	float: left;
+	
+}
+
+nav ul {  
+	list-style-type: none;
+	font-size: 1.2em;
+}
+nav li { 
+	display: inline; 
+	height: 25px;
+	width: 60px;
+	padding: 10px 15px 10px 15px; 
+	background-color: #FF3300; 
+}
+nav li:hover { background-color: #FF7519; }
+nav a { text-decoration: none; height: 100px; }    
+nav a:link { color: #FFFF66; }
+nav a:visited { color: #800000; }
+nav a:hover { color: white; background-color: #FF7519;  }
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	margin-top: 1em;
+}
+
+/* Form Formatting */
+form { 	padding: 1em 1em 1em 1em; }
+.button { height: 25px; width: 150px; }
+
+/* This code makes labels and input display in a grid */
+label, input, select { display: inline-block; margin: 2px 2px 2px 2px; width: 200px; }
+
+/* Table formatting */
+th { text-align: left; }
+td { width: 250px; }
+
+/* Slideshow */
+#slideshow { 
+	clear: both; 
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px 0 15px 0;
+}
+#slideshow img {
+	height: 400px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+} 
+.slidesjs-next {
+	color: white;
+	float: right;
+}
+
+.slidesjs-previous {
+	color: white;
+	float: left;
+}
+.slidesjs-pagination {
+	display: none;
+}
+
+/* Validation formatting */
+.error { color: red; }
+label.error { color: red; margin-left: 5px; width: 300px; }
+input.error { border: 1px solid red; }
+
+/* Misc formatting */
+.hidden { display: none; }
+.small { font-size: 80%; text-align: center; font-weight: bold; }
+.new { color: #FF3300; font-weight: bold; }
+
+
